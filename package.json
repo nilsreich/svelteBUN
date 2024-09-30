@@ -40,7 +40,6 @@
 	"type": "module",
 	"dependencies": {
 		"bits-ui": "^0.21.15",
-		"drizzle-orm": "^0.31.2",
-		"drizzle-orm-sqlite": "^0.16.1"
+		"drizzle-orm": "^0.31.2"
 	}
 }
