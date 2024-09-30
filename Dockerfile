@@ -1,5 +1,5 @@
 # Base image
-FROM oven/bun:latest as build
+FROM oven/bun:latest AS build
 
 # Set the working directory
 WORKDIR /app
@@ -17,7 +17,7 @@ RUN bun install
 # Build the SvelteKit app
 RUN bun run build
 
-RUN bunx drizzle-kit push || true
+# RUN bunx drizzle-kit push || true
 
 # Expose the port the app will run on
 EXPOSE 3000
